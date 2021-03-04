@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	align-items: center;
+	height: 10vh;
+}
+
+.logo-container {
+	flex: 1;
+}
+
+.logo-container h5 {
+	margin-left: 10px;
+}
+
+nav {
+	flex: 2;
+}
+
+.nav-links, .logo-container, .cart {
+	display: flex;
+}
+
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;	
+	font-size: calc(12px + 0.2vmax);
+}
+
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height:80vh;
+	margin: 0 auto;
+}
+
+.text {
+	flex: 1;
+}
+
+.visual {
+	display:flex;
+	flex: 1;
+	justify-content: center;
+}
+.visual img {
+	height: 60vh;
+}
+
+.slide-change {
+	position: absolute;
+	right: 26%;
+	bottom: 20%;
+}
+
+.slide-change img {
+	margin: 0 5px;
+	height: 12px;
+}
+
+.big {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 70%;
+	opacity: 0.5;
+	z-index: -1;
+}
+.mid{
+	position: absolute;
+	top: 30%;
+	right: 35%;
+	height: 40%;
+	opacity: 0.4;
+	z-index: -1;
+}
+.small {
+	position: absolute;
+	left: 40vh;
+	bottom: 10vh;
+	z-index: -1;
+}

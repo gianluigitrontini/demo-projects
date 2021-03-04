@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header p {
+    width: 60px;
+    text-align: center;
+}
+
+.round {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(177, 177, 177);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+
+}
+
+img {
+    margin: 20px;
+    width: 250px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: 20px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    outline: none;
+    padding: 0 30px;
+    border-radius: 20px;
+    border: 0.5px solid #f2f2f2;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.icon {
+    padding: 12px;
+    color: #c2c2c2;
+    min-width: 30px;
+    text-align: center;
+}
+
+input:hover {
+    box-shadow: 0 0 6px #e4e4e4;
+}
+
+button {
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background: #f2f2f2;
+    color: #5F6368;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.top-link {
+    cursor: pointer;
+}
+
+.top-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    justify-self: flex-end;
+}
+
+.foot-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex p {
+    width: fit-content;
+    margin: 10px;
+}
+
+.second-foot {
+    justify-content: space-between;
+    background: #f2f2f2;
+}
+
+footer .a {
+    background: #f2f2f2;
+    border-bottom: 1px solid #e7e7e7;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.a p {
+    margin-left: 10px;
+}

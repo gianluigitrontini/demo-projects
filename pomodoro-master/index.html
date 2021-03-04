@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/9c29b84447.js" crossorigin="anonymous"></script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Pomodoro Master - Do more. Do Better.</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg main-nav " id="navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo.png" alt="" id="myLogo" class="img-fluid">
+                </a>
+                <!-- Hamburger -->
+                <button class="navbar-toggler collapsed" id="myNavBtn" type="button" data-toggle="collapse"
+                    data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="animated-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item mx-3"><a class="nav-link" href="settings.html"><i
+                                    class="fas fa-user-cog settings-icon"></i>SETTINGS</a></li>
+                        <li class="nav-item dropdown text-center mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ABOUT
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="http://gianluigitrontini.github.io/"
+                                    target="_blank">PORTFOLIO</a>
+                                <a class="dropdown-item"
+                                    href="https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=3320345472634377542"
+                                    target="_blank">RESUME</a>
+                            </div>
+                        </li>
+                        <!-- Login -->
+                        <div class="dropdown text-center mx-3">
+                            <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="signIn">SIGN IN</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right mt-3">
+                                <form class="px-4 py-3">
+                                    <div class="form-group">
+                                        <label for="dropdownEmail">Email address</label>
+                                        <input type="email" class="form-control" id="dropdownEmail"
+                                            placeholder="email@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dropdownPassword">Password</label>
+                                        <input type="password" class="form-control" id="dropdownPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                <a class="dropdown-item" href="#">Forgot password?</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row flex-column justify-content-center align-items-center">
+                <div class="pomodoro col-10 text-center">
+                    <img src="assets/pomodoro.png" alt="">
+                    <h2 id="start" class="startBtn">START</h2>
+                    <audio id="buzzer" src="assets/alarm.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="my-3 controlButtons">
+                    <button class="btn btn-lg btn-info" id="playPause">Pause</button>
+                    <button class="btn btn-outline-info btn-lg" id="reset">Reset</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="sessionBlock col-12 col-md-6 my-3 my-md-0 d-flex flex-column align-items-center">
+                    <h2>Session Time</h2>
+                    <div class="text-center sessionTime d-flex justify-content-center align-items-center">
+                        <button class="btn btn-primary" id="subSession">-</button>
+                        <h2 class="mx-4 my-0" id="sessionTime">25</h2>
+                        <button class="btn btn-primary" id="addSession">+</button>
+                    </div>
+                    <p class="small">minutes</p>
+                </div>
+
+                <div class="breakBlock col-12 col-md-6 my-3 my-md-0 d-flex flex-column align-items-center">
+                    <h2>Break Time</h2>
+                    <div class="text-center breakTime d-flex justify-content-center align-items-center">
+                        <button class="btn btn-primary" id="subBreak">-</button>
+                        <h2 class="mx-4 my-0" id="breakTime">5</h2>
+                        <button class="btn btn-primary" id="addBreak">+</button>
+                    </div>
+                    <p class="small">minutes</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="fixed-bottom py-3 mt-auto">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="copyright col-sm-8">
+                    <p class="mb-0">© 2020 Pomodoro Master Ltd. All rights reserved.
+                    </p>
+                </div>
+                <div class="cookies col-sm-4 text-md-right">
+                    <p class="mb-0">About <a href="#">cookies</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookiesAgreement col-12 col-md-6 text-center">
+        <div class="text-right closeBtn" id="closeBtn">X</div>
+        This website uses cookies to ensure you get the best experience on our website. You can read our
+        cookie policy <a href="#">here</a>.
+        <button class="btn btn-info mt-2" id="closeBtn2">I Understand</button>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
