@@ -1,5 +1,5 @@
 # Fancy To Do
-**[View Project](https://gianluigitrontini.github.io/demo-projects/fancy-to-do/)**
+**[View Project](https://gianluigitrontini.github.io/demo-projects/fancy-to-do/)**\
 <img src="https://github.com/gianluigitrontini/preview-images/blob/main/demo-projects/fancy-to-do.png?raw=true" />
 
 # Guess The RGB
