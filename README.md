@@ -11,7 +11,7 @@
 <img src="https://github.com/gianluigitrontini/preview-images/blob/main/demo-projects/number-guess.gif?raw=true" />
 
 # Tap & Play
-*Tap any key on your keyboard and a sound will play*
+*Tap any key on your keyboard and a sound will play*  
 **[View Project](https://gianluigitrontini.github.io/demo-projects/tap-and-play/)**
 <img src="https://github.com/gianluigitrontini/preview-images/blob/main/demo-projects/tap-and-play.gif?raw=true" />
 
@@ -20,6 +20,7 @@
 <img src="https://github.com/gianluigitrontini/preview-images/blob/main/demo-projects/rock-paper-scissors.png?raw=true" />
 
 # Pomodoro Master
+*This was the test project for Aircury - Not a lot of functionality, just a timer (in seconds and not minutes). It plays a sound when it's done.*  
 **[View Project](https://gianluigitrontini.github.io/demo-projects/pomodoro-master/)**
 <img src="https://github.com/gianluigitrontini/preview-images/blob/main/demo-projects/pomodoro-master.JPG?raw=true" />
 
